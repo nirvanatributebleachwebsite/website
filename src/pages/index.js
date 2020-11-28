@@ -117,6 +117,12 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
       <h2>About</h2>
       <div dangerouslySetInnerHTML={{__html: meta.edges[0].node.descriptionLong.childMarkdownRemark.html}}></div>
     </section>
+    <section>
+      <h2>Contact / Bookings</h2>
+      <p><strong>Ferdi Wels</strong><br />
+      Tel: +31 (0)6 1920 0975<br />
+      E-mail: <a href="mailto:info@nirvanatribute.nl">info@nirvanatribute.nl</a></p>
+    </section>
 
     {/* Shows */}
     { shows && <section className="c-shows">
