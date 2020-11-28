@@ -65,12 +65,12 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     # Press quotes
-    type ContentfulPressQuotes implements Node {
-       quote: contentfulPressQuotesQuoteTextNode
-       quoteBy: String
-       quoteUrl: String
-       quoteLinkTitle: String
-    }
+    # type ContentfulPressQuotes implements Node {
+    #   quote: contentfulPressQuotesQuoteTextNode
+    #   quoteBy: String
+    #   quoteUrl: String
+    #   quoteLinkTitle: String
+    #}
     
     # Concert reviews
     # type ContentfulConcertReviews implements Node @dontInfer {

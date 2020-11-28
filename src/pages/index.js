@@ -4,7 +4,7 @@ import Show from '../components/Show'
 import Video from '../components/Video'
 import News from '../components/News'
 import Wrapper from '../components/Wrapper'
-import PRESS_QUOTES from "../components/PressQuotes";
+// import PRESS_QUOTES from "../components/PressQuotes";
 
 export const HOMEPAGE_QUERY = graphql`
 query HOMEPAGE_QUERY ($yesterday: Date) {
@@ -43,21 +43,21 @@ query HOMEPAGE_QUERY ($yesterday: Date) {
       }
     }
   }
-  pressQuoteItems: allContentfulPressQuotes {
-    edges {
-      node {
-        quote {
-          childMarkdownRemark {
-            html
-            excerpt(pruneLength: 512)
-          }
-        }
-        quoteBy
-        quoteUrl
-        quoteLinkTitle
-      }
-    }
-  }  
+  # pressQuoteItems: allContentfulPressQuotes {
+  #   edges {
+  #     node {
+  #       quote {
+  #         childMarkdownRemark {
+  #           html
+  #           excerpt(pruneLength: 512)
+  #         }
+  #       }
+  #       quoteBy
+  #       quoteUrl
+  #       quoteLinkTitle
+  #     }
+  #   }
+  # }  
   showList: allContentfulShows(filter: {start: {lte: $yesterday}}, sort: {fields: start, order: ASC}) {
     edges {
       node {
@@ -90,10 +90,10 @@ query HOMEPAGE_QUERY ($yesterday: Date) {
 }
 `;
 
-const Home = ({data:{showList, videoItems, newsList, pressQuoteItems, meta }}) => {
+const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }}) => {
   const shows = showList.edges.length && showList.edges || false
   const news = newsList.edges.length && newsList.edges || false
-  const pressQuotes = pressQuoteItems && pressQuoteItems.edges || false
+  // const pressQuotes = pressQuoteItems && pressQuoteItems.edges || false
   const videos = videoItems.edges || false
 
   return (<Wrapper>
@@ -110,8 +110,8 @@ const Home = ({data:{showList, videoItems, newsList, pressQuoteItems, meta }}) =
       }</ul>
     </section> }
 
-    {/* Press quotes */}
-    { pressQuotes && <PRESS_QUOTES pressQuotes={pressQuotes} /> }
+    {/*/!* Press quotes *!/*/}
+    {/*{ pressQuotes && <PRESS_QUOTES pressQuotes={pressQuotes} /> }*/}
 
     <section>
       <h2>About</h2>
