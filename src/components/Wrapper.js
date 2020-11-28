@@ -56,7 +56,6 @@ const Wrapper = ({children}) => (
             <h1>
               <Link to="/">
                 <div className="u-sr-only">{ name || 'BLEACH' }</div>
-                {/*<img src="/assets/img/the-kings-head-logo.png" className="c-logo" alt={ name || 'BLEACH' } />*/}
                 BLEACH
               </Link>
             </h1>

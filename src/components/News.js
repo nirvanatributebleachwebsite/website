@@ -48,7 +48,7 @@ const News = (props) => {
     <div className="c-news__text">
       <h3 className="c-news__title">{title}</h3>
       { shortDescriptionText && <div dangerouslySetInnerHTML={{ __html: shortDescriptionText }}></div> }
-      { title === 'BLEACH wint 3FM Kurt Cobain Reïncarnatiecontest' && <p><iframe frameBorder="no" height="70" scrolling="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62915790&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700" width="340"></iframe> <br /><iframe frameBorder="no" height="70" scrolling="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62915791&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700" width="340"></iframe></p>}
+      { title === 'BLEACH wint 3FM Kurt Cobain Reïncarnatiecontest' && <p><iframe frameBorder="no" height="70" scrolling="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62915790&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700" width="340"></iframe> <br /><iframe frameBorder="no" height="70" scrolling="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F62915791&amp;auto_play=false&amp;show_artwork=false&amp;color=ff7700" width="340"></iframe></p>}
       <div className="c-news__order">
         { !!readMoreUrl && <div className="c-news__button-container"><a href={readMoreUrl} target="_blank" className="c-news__button">Read more</a></div> }
       </div>
