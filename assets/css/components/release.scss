@@ -1,0 +1,43 @@
+.c-release {
+  //
+}
+
+.c-release__image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.c-release__platform-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1rem;
+  margin-top: 2.5rem;
+}
+
+.c-release__platform-item {
+  flex: 0 0 auto;
+  padding: 0 0 1rem 1rem;
+}
+
+@media (any-hover: hover) {
+  .c-release__platform-item {
+    padding-left: 0.75rem;
+  }
+}
+
+
+.c-release__merch-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.c-release__merch-item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}

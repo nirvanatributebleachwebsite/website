@@ -1,0 +1,14 @@
+[
+  {
+    "ts": "2020-11-28T12:36:19.224Z",
+    "level": "error",
+    "error": {
+      "originalError": {
+      },
+      "stacktrace": [
+        "Error: Error: Please make sure the destination space have the same default locale as the source Default locale for source space : nl-NL Default locale for destination space: en-US ",
+        "/home/jvdhoeven/.nvm/versions/node/v14.13.0/lib/node_modules/contentful-cli/node_modules/contentful-batch-libs/dist/listr.js:24:27"
+      ]
+    }
+  }
+]

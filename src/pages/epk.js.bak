@@ -1,0 +1,195 @@
+import React from 'react'
+import { graphql } from 'gatsby'
+import Wrapper from "../components/Wrapper";
+import Show from "../components/Show";
+import Video from "../components/Video";
+import BIO from "../components/Bio";
+import BANDPHOTOS from "../components/Bandphotos";
+import LOGOS from "../components/Logos";
+import CONTACT from "../components/Contact";
+import PRESS_QUOTES from "../components/PressQuotes";
+import CONCERT_REVIEWS from "../components/ConcertReviews";
+
+export const EPK_QUERY = graphql`
+query EPK_QUERY ($yesterday: Date) {
+  epkItem: allContentfulEpk(limit: 1) {
+    edges {
+      node {
+        bioLongNl {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bioMediumNl {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bioShortNl {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bioLongEn {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bioMediumEn {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bioShortEn {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        contactInfo {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        bandPhotos {
+          fluid(maxWidth: 380, quality: 100) {
+            ...GatsbyContentfulFluid_withWebp
+          }            
+          file {
+            url
+          }
+        }
+        logos {
+          fluid(maxWidth: 380, quality: 100) {
+            ...GatsbyContentfulFluid_withWebp
+          }              
+          file {
+            url
+          }
+        }
+      }
+    }
+  }
+  pressQuoteItems: allContentfulPressQuotes {
+    edges {
+      node {
+        quote {
+          childMarkdownRemark {
+            html
+            excerpt(pruneLength: 512)
+          }
+        }
+        quoteBy
+        quoteUrl
+        quoteLinkTitle
+      }
+    }
+  }  
+  #concertReviewItems: allContentfulConcertReviews {
+  #  edges {
+  #    node {
+  #      review {
+  #        childMarkdownRemark {
+  #          html
+  #          excerpt(pruneLength: 512)
+  #        }
+  #      }
+  #      reviewBy
+  #      reviewUrl
+  #      reviewLinkTitle
+  #    }
+  #  }
+  #}  
+  showList: allContentfulShows(filter: {start: {gte: $yesterday}}, sort: {fields: start, order: ASC}) {
+    edges {
+      node {
+        ticketPrice
+        ticketUrl
+        name
+        locationUrl
+        locationStreetAddress
+        locationPostalCode
+        locationName
+        end
+        start
+        locationCity
+        description {
+          childMarkdownRemark {
+            excerpt(pruneLength: 512)
+          }
+        }
+      }
+    }
+  }
+  videoItems: allContentfulVideos(sort: {fields: sortingWeight, order: ASC}) {
+    edges {
+      node {
+        title
+        youtubeId
+      }
+    }
+  }
+}
+`;
+
+const EPKPage = ({data:{epkItem, pressQuoteItems, concertReviewItems, showList, videoItems, meta }}) => {
+  const epk = epkItem.edges[0].node || false
+  const shows = showList.edges.length && showList.edges || false
+  const videos = videoItems.edges || false
+  const pressQuotes = pressQuoteItems && pressQuoteItems.edges || false
+  const concertReviews = concertReviewItems && concertReviewItems.edges || false
+
+  return (<Wrapper>
+
+    {/* Press quotes */}
+    { pressQuotes && <PRESS_QUOTES pressQuotes={pressQuotes} /> }
+
+    {/* Videos */}
+    { videos && <section className="c-videos">
+      <h2>Videos</h2>
+      <ol className="c-videos__list">{
+        videos.map(({ node }) => {
+          return(<li className="c-videos__item" key={node.title}>
+            <Video {... node} />
+          </li>)
+        })
+      }</ol>
+    </section> }
+
+    {/* Contact info */}
+    { epk && <CONTACT {... epk} /> }
+
+    {/* BIO */}
+    { epk && <BIO {... epk} /> }
+
+    {/* Band photos */}
+    { epk && <BANDPHOTOS {... epk} /> }
+
+    {/* Logos */}
+    { epk && <LOGOS {... epk} /> }
+
+    {/* Concert reviews */}
+    { concertReviews && <CONCERT_REVIEWS concertReviews={concertReviews} /> }
+
+    {/* Shows */}
+    { shows && <section className="c-shows">
+      <h2>Shows</h2>
+      <ol className="c-shows__list">{
+        shows.map(({ node }) => {
+          return(<li className="c-shows__item" key={node.name}>
+            <Show {... node} />
+          </li>)
+        })
+      }</ol>
+    </section> }
+
+  </Wrapper>)
+}
+
+export default EPKPage;

@@ -1,0 +1,4797 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "shows",
+        "type": "ContentType",
+        "createdAt": "2020-03-04T19:05:57.759Z",
+        "updatedAt": "2020-05-19T13:48:18.367Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2020-05-19T13:48:18.367Z",
+        "firstPublishedAt": "2020-03-04T19:05:58.214Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Shows",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Naam",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "size": {
+                "max": 512
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "start",
+          "name": "Begin",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "end",
+          "name": "Einde",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationName",
+          "name": "Locatie naam",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationStreetAddress",
+          "name": "Straat + huisnummer",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationPostalCode",
+          "name": "Postcode",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationCity",
+          "name": "Stad",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "locationUrl",
+          "name": "Locatie website",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ticketPrice",
+          "name": "Ticket prijs",
+          "type": "Number",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "ticketUrl",
+          "name": "Tickets website",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "merch",
+        "type": "ContentType",
+        "createdAt": "2020-03-07T19:11:53.226Z",
+        "updatedAt": "2020-04-18T10:06:01.474Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-04-18T10:06:01.474Z",
+        "firstPublishedAt": "2020-03-07T19:11:54.074Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Merch",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Naam",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "max": 512
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "Afbeelding(en)",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "image"
+                ]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "sizes",
+          "name": "Maten",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "price",
+          "name": "Prijs",
+          "type": "Number",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sortingWeight",
+          "name": "Sorteergewicht",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            },
+            {
+              "range": {
+                "min": 0
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "releases",
+        "type": "ContentType",
+        "createdAt": "2020-03-07T19:51:50.557Z",
+        "updatedAt": "2020-04-13T09:07:53.601Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-04-13T09:07:53.601Z",
+        "firstPublishedAt": "2020-03-07T19:51:50.969Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Releases",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Titel",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "showTitleOnHomepage",
+          "name": "Laat titel zien op homepage",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "Afbeelding(en)",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "image"
+                ]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "description",
+          "name": "Omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "releaseDate",
+          "name": "Uitgebracht op",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tracks",
+          "name": "Tracks",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "streamingURLs",
+          "name": "Streaming URLs",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "relatedMerch",
+          "name": "Gerelateerde merch",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "merch"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "meta",
+        "type": "ContentType",
+        "createdAt": "2020-03-07T21:46:43.810Z",
+        "updatedAt": "2020-03-11T22:03:13.275Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-11T22:03:13.275Z",
+        "firstPublishedAt": "2020-03-07T21:46:44.279Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Meta",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "naam",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "descriptionShort",
+          "name": "Korte omschrijving",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "descriptionLong",
+          "name": "Omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "socials",
+          "name": "socials",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Achtergrondafbeelding",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": 1920,
+                  "max": null
+                },
+                "height": {
+                  "min": 1080,
+                  "max": null
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "socialImage",
+          "name": "Afbeelding Socials",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": 1920,
+                  "max": null
+                },
+                "height": {
+                  "min": 1080,
+                  "max": null
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "videos",
+        "type": "ContentType",
+        "createdAt": "2020-04-28T08:52:34.094Z",
+        "updatedAt": "2020-05-19T13:54:06.165Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2020-05-19T13:54:06.165Z",
+        "firstPublishedAt": "2020-04-28T08:52:34.504Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Videos",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Titel",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "youtubeId",
+          "name": "Youtube ID",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "sortingWeight",
+          "name": "Sorteergewicht",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            },
+            {
+              "range": {
+                "min": 0
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "epk",
+        "type": "ContentType",
+        "createdAt": "2020-06-05T07:12:43.702Z",
+        "updatedAt": "2020-06-05T10:33:59.754Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2020-06-05T10:33:59.754Z",
+        "firstPublishedAt": "2020-06-05T07:12:44.165Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "displayField": "bioLongNl",
+      "name": "EPK",
+      "description": "Electronic Press Kit",
+      "fields": [
+        {
+          "id": "bioLongNl",
+          "name": "Bio Long NL",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bioMediumNl",
+          "name": "Bio Medium NL",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bioShortNl",
+          "name": "Bio Short NL",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bioLongEn",
+          "name": "Bio Long EN",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bioMediumEn",
+          "name": "Bio Medium EN",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bioShortEn",
+          "name": "Bio Short EN",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "contactInfo",
+          "name": "Contact info",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "bandPhotos",
+          "name": "Band photos",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "logos",
+          "name": "Logos",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+            ],
+            "linkType": "Asset"
+          }
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "pressQuotes",
+        "type": "ContentType",
+        "createdAt": "2020-06-05T07:24:45.850Z",
+        "updatedAt": "2020-06-05T07:24:46.279Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2020-06-05T07:24:46.279Z",
+        "firstPublishedAt": "2020-06-05T07:24:46.279Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "displayField": "quote",
+      "name": "Press quotes",
+      "description": "",
+      "fields": [
+        {
+          "id": "quote",
+          "name": "Quote",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "quoteBy",
+          "name": "Quote by",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "quoteUrl",
+          "name": "Quote URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$"
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "quoteLinkTitle",
+          "name": "Quote link title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "concertReviews",
+        "type": "ContentType",
+        "createdAt": "2020-06-05T07:26:05.738Z",
+        "updatedAt": "2020-06-05T13:50:27.203Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-06-05T13:50:27.203Z",
+        "firstPublishedAt": "2020-06-05T07:26:06.119Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "displayField": "reviewBy",
+      "name": "Concert reviews",
+      "description": "",
+      "fields": [
+        {
+          "id": "review",
+          "name": "Review",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "reviewBy",
+          "name": "Review by",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "reviewUrl",
+          "name": "Review URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$"
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "reviewLinkText",
+          "name": "Review link text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "news",
+        "type": "ContentType",
+        "createdAt": "2020-10-03T09:53:44.062Z",
+        "updatedAt": "2020-10-03T10:43:10.458Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2020-10-03T10:43:10.458Z",
+        "firstPublishedAt": "2020-10-03T09:53:44.657Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 12,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "News",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Titel",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "shortDescription",
+          "name": "Korte omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Uitgebreide omschrijving",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": true
+        },
+        {
+          "id": "showOnHomePage",
+          "name": "Toon op homepage",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "displayDate",
+          "name": "Plaatsingsdatum",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "images",
+          "name": "Afbeeldingen",
+          "type": "Array",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkMimetypeGroup": [
+                  "image"
+                ]
+              }
+            ],
+            "linkType": "Asset"
+          }
+        },
+        {
+          "id": "readMoreUrl",
+          "name": "Lees meer url",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^(ftp|http|https):\\/\\/(\\w+:{0,1}\\w*@)?(\\S+)(:[0-9]+)?(\\/|\\/([\\w#!:.?+=&%@!\\-/]))?$",
+                "flags": null
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 27,
+        "createdAt": "2020-03-04T19:05:58.281Z",
+        "createdBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-05-19T13:48:19.363Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "shows",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "users-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "start",
+          "settings": {
+            "ampm": "24",
+            "format": "time"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "end",
+          "settings": {
+            "ampm": "24",
+            "format": "time"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "locationName",
+          "settings": {
+            "helpText": "Locatievelden zijn niet verplicht, wel fijn voor ome Google"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "locationStreetAddress",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "locationPostalCode",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "locationCity",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "locationUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ticketPrice",
+          "settings": {
+            "helpText": "Leeglaten = gratis"
+          },
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "ticketUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 13,
+        "createdAt": "2020-03-07T19:11:54.144Z",
+        "createdBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-04-18T10:06:02.267Z",
+        "updatedBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "merch",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "users-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sizes",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sortingWeight",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 13,
+        "createdAt": "2020-03-07T19:51:51.041Z",
+        "createdBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-04-13T09:07:54.739Z",
+        "updatedBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "releases",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "users-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showTitleOnHomepage",
+          "settings": {
+            "trueLabel": "Ja",
+            "falseLabel": "Nee"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "releaseDate",
+          "settings": {
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "tracks",
+          "settings": {
+            "helpText": "Eén titel per regel"
+          },
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "streamingURLs",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "relatedMerch",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 11,
+        "createdAt": "2020-03-07T21:46:44.353Z",
+        "createdBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-04-08T21:33:01.314Z",
+        "updatedBy": {
+          "sys": {
+            "id": "139lIsXjeQiZIYtoR8GS4m",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "meta",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "1VchawWvbIClHuMIyxwR5m",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "users-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "descriptionShort",
+          "settings": {
+            "helpText": "Voor in de description-meta et cetera"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "descriptionLong",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "socials",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "settings": {
+            "helpText": "Minimaal 1920x1080"
+          },
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "socialImage",
+          "settings": {
+            "helpText": "Minimaal 1920x1080, fallback naar achtergrondafbeelding"
+          },
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2020-04-28T08:52:34.563Z",
+        "createdBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-05-19T13:54:07.310Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "videos",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "youtubeId",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "sortingWeight",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2020-06-05T07:12:44.295Z",
+        "createdBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-06-05T10:34:00.328Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "epk",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "bioLongNl",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bioMediumNl",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bioShortNl",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bioLongEn",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bioMediumEn",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bioShortEn",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "contactInfo",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "bandPhotos",
+          "settings": {
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "logos",
+          "settings": {
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
+          "widgetId": "assetLinksEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2020-06-05T07:24:46.369Z",
+        "createdBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-06-05T07:24:47.149Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "pressQuotes",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "quote",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "quoteBy",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "quoteUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "quoteLinkTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-06-05T07:26:06.214Z",
+        "createdBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-06-05T13:50:27.672Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1mWZAAD6d6I2p0HQmjx5V2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "concertReviews",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "review",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "reviewBy",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "reviewUrl",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "reviewLinkText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "lzi4cpw5ff3r",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 24,
+        "createdAt": "2020-10-03T09:53:44.771Z",
+        "createdBy": {
+          "sys": {
+            "id": "20Gi3lqM2VXbQqMKfMsDTw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-10-03T10:43:10.966Z",
+        "updatedBy": {
+          "sys": {
+            "id": "20Gi3lqM2VXbQqMKfMsDTw",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "news",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "shortDescription",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "showOnHomePage",
+          "settings": {
+            "trueLabel": "Ja",
+            "falseLabel": "Nee"
+          },
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "displayDate",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "images",
+          "widgetId": "assetGalleryEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "readMoreUrl",
+          "widgetId": "urlEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "6ENHzyERR9uEHYh1joSP5X",
+        "type": "Entry",
+        "createdAt": "2020-03-07T19:21:26.023Z",
+        "updatedAt": "2020-10-03T11:19:14.979Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 138,
+        "publishedAt": "2020-10-03T11:19:14.979Z",
+        "firstPublishedAt": "2020-03-07T20:12:12.787Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 139,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "merch"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "Ambigram Shirt Unisex"
+        },
+        "description": {
+          "nl-NL": "Black shirt with ambigram logo"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "63UH48BWFnWtScPWoKx3dG"
+              }
+            }
+          ]
+        },
+        "sizes": {
+          "nl-NL": [
+            "S",
+            "m",
+            "L",
+            "xL",
+            "XXL"
+          ]
+        },
+        "price": {
+          "nl-NL": 10
+        },
+        "url": {
+          "nl-NL": "https://thekingshead.bandcamp.com/merch/ambigram-shirt-unisex"
+        },
+        "sortingWeight": {
+          "nl-NL": 2
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "2JIVYL5UaWktT4xThAc5HO",
+        "type": "Entry",
+        "createdAt": "2020-03-08T14:22:43.043Z",
+        "updatedAt": "2020-07-24T08:31:07.216Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 124,
+        "publishedAt": "2020-07-24T08:31:07.216Z",
+        "firstPublishedAt": "2020-03-08T14:27:00.603Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 22,
+        "version": 125,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "releases"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The Far Beyond"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5o2QzmMG3FkoMFGYeHr6Y4"
+              }
+            }
+          ]
+        },
+        "description": {
+          "nl-NL": "Debuutsingle van The King's Head. "
+        },
+        "releaseDate": {
+          "nl-NL": "2020-05-29"
+        },
+        "tracks": {
+          "nl-NL": "The Far Beyond"
+        },
+        "streamingURLs": {
+          "nl-NL": [
+            "https://open.spotify.com/album/3pEh2y9H1nejevGivFPGWx",
+            "https://www.deezer.com/track/958395402?utm_source=deezer&utm_content=track-958395402&utm_term=391352085_1590711643&utm_medium=web",
+            "https://tidal.com/browse/track/141111644",
+            "https://music.apple.com/us/album/the-far-beyond-single/1512882738"
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1U0h9CzdNz03p9eec133yL",
+        "type": "Entry",
+        "createdAt": "2020-03-08T14:37:57.995Z",
+        "updatedAt": "2020-10-03T11:26:48.794Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 86,
+        "publishedAt": "2020-10-03T11:26:48.794Z",
+        "firstPublishedAt": "2020-03-08T14:39:19.290Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 87,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "meta"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "The King's Head"
+        },
+        "descriptionShort": {
+          "nl-NL": "The King's Head. Rock band from Breda, Netherlands"
+        },
+        "descriptionLong": {
+          "nl-NL": "Mag leeg blijven, wordt nu nog niks mee gedaan..."
+        },
+        "socials": {
+          "nl-NL": [
+            "https://www.facebook.com/TheKingsHeadRocks/",
+            "https://www.instagram.com/thekingsheadrocks/",
+            "https://www.youtube.com/channel/UCsG3x3F7HRnHvxaFIBGTXIA"
+          ]
+        },
+        "backgroundImage": {
+          "nl-NL": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7mpRNgchggfL8yhEyZ4Unj"
+            }
+          }
+        },
+        "socialImage": {
+          "nl-NL": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7mpRNgchggfL8yhEyZ4Unj"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "4XDOEI8uVUvDihSvjonfnX",
+        "type": "Entry",
+        "createdAt": "2020-04-17T14:03:45.123Z",
+        "updatedAt": "2020-10-03T11:19:33.342Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2020-10-03T11:19:33.342Z",
+        "firstPublishedAt": "2020-04-17T14:05:54.314Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "merch"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "Ambigram Girlie"
+        },
+        "description": {
+          "nl-NL": "Black shirt with ambigram logo"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "13GknM913SV2WXiCt7URrA"
+              }
+            }
+          ]
+        },
+        "sizes": {
+          "nl-NL": [
+            "S",
+            "m",
+            "L",
+            "xL",
+            "XXL"
+          ]
+        },
+        "price": {
+          "nl-NL": 10
+        },
+        "url": {
+          "nl-NL": "https://thekingshead.bandcamp.com/merch/ambigram-girlie-round-neck"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "7jhZZGKxexmPPughR5R4Vu",
+        "type": "Entry",
+        "createdAt": "2020-04-17T14:06:03.872Z",
+        "updatedAt": "2020-10-03T11:18:04.136Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2020-10-03T11:18:04.136Z",
+        "firstPublishedAt": "2020-04-17T14:07:01.093Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "merch"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "Ambigram Girlie V-neck"
+        },
+        "description": {
+          "nl-NL": "Black shirt with ambigram logo"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6HgXAE1F5HCcjz3v9WQ1yL"
+              }
+            }
+          ]
+        },
+        "sizes": {
+          "nl-NL": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+          ]
+        },
+        "price": {
+          "nl-NL": 10
+        },
+        "url": {
+          "nl-NL": "https://thekingshead.bandcamp.com/merch/ambigram-girlie-v-neck"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "5EGe4aiaxSF0s5Mr8RzZAj",
+        "type": "Entry",
+        "createdAt": "2020-04-18T08:54:51.613Z",
+        "updatedAt": "2020-10-03T11:18:58.217Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 97,
+        "publishedAt": "2020-10-03T11:18:58.217Z",
+        "firstPublishedAt": "2020-04-18T09:00:31.134Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 98,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "merch"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "The Far Beyond"
+        },
+        "description": {
+          "nl-NL": "Debut single \"The Far Beyond\""
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5o2QzmMG3FkoMFGYeHr6Y4"
+              }
+            }
+          ]
+        },
+        "price": {
+          "nl-NL": 0
+        },
+        "url": {
+          "nl-NL": "http://thekingshead.bandcamp.com/track/the-far-beyond"
+        },
+        "sortingWeight": {
+          "nl-NL": 1
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "5IPObnSliBj35yrSBxBcZB",
+        "type": "Entry",
+        "createdAt": "2020-05-19T13:35:57.652Z",
+        "updatedAt": "2020-05-19T13:48:32.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2020-05-19T13:48:32.852Z",
+        "firstPublishedAt": "2020-05-19T13:40:48.408Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "shows"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "Breda Barst"
+        },
+        "description": {
+          "nl-NL": "Twee dagen vol pop, rock, metal, punk, elektro, hiphop en dance in het Bredase stadspark Valkenberg. Een mooie mix van regionaal en lokaal talent en gevestigde artiesten. "
+        },
+        "start": {
+          "nl-NL": "2019-09-14T15:00"
+        },
+        "locationName": {
+          "nl-NL": "Valkenbergpark, Breda"
+        },
+        "locationCity": {
+          "nl-NL": "Breda"
+        },
+        "locationUrl": {
+          "nl-NL": "https://bredabarst.nl/"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "7E7E5K7UAWpeU85iGjnq9R",
+        "type": "Entry",
+        "createdAt": "2020-05-19T13:43:07.133Z",
+        "updatedAt": "2020-05-24T19:55:39.860Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "publishedAt": "2020-05-24T19:55:39.860Z",
+        "firstPublishedAt": "2020-05-24T19:54:02.031Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "shows"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "Couch Potato Festival"
+        },
+        "description": {
+          "nl-NL": "Corona proof festival uit @SoundDog Breda!"
+        },
+        "start": {
+          "nl-NL": "2020-05-30T20:30"
+        },
+        "end": {
+          "nl-NL": "2020-05-30T21:00"
+        },
+        "locationName": {
+          "nl-NL": "SoundDog"
+        },
+        "locationStreetAddress": {
+          "nl-NL": "Oude Baan 8"
+        },
+        "locationPostalCode": {
+          "nl-NL": "4825 BL"
+        },
+        "locationCity": {
+          "nl-NL": "Breda"
+        },
+        "locationUrl": {
+          "nl-NL": "https://sounddog.nl"
+        },
+        "ticketPrice": {
+          "nl-NL": 0
+        },
+        "ticketUrl": {
+          "nl-NL": "https://couchpotatofestival.nl"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "6OQX4EhaBIijhSV9zltnKD",
+        "type": "Entry",
+        "createdAt": "2020-05-19T13:50:52.813Z",
+        "updatedAt": "2020-05-25T12:28:52.134Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-05-25T12:28:52.134Z",
+        "firstPublishedAt": "2020-05-19T13:51:58.927Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "videos"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The Far Beyond"
+        },
+        "youtubeId": {
+          "nl-NL": "FNC23DOFnK0"
+        },
+        "sortingWeight": {
+          "nl-NL": 999
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "7C0WtwPu7plyZQVw8DhBNG",
+        "type": "Entry",
+        "createdAt": "2020-06-05T07:12:54.579Z",
+        "updatedAt": "2020-11-24T07:56:10.487Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 68,
+        "publishedAt": "2020-11-24T07:56:10.487Z",
+        "firstPublishedAt": "2020-06-05T07:18:42.919Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 13,
+        "version": 69,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "epk"
+          }
+        }
+      },
+      "fields": {
+        "bioLongNl": {
+          "nl-NL": "We leven in het jaar 2018 als in Breda de band The King’s Head wordt opgericht.\nVijf mannen, die op dat moment al twintig jaar lang de lokale en landelijke scene afstruinen in bands als Wake, Bleach, Hilton Dive, Revölvo en Cape Canaveral, slaan de handen ineen. \nVanaf de eerste repetitie af aan is het duidelijk waar de band voor staat.\nEen felle, melodische, donkere, zware en progressieve mix waarin alle elementen waaruit hun muzikale opvoeding bestond aan bod komt. \n\nDe muziek is zo divers als de geschiedenis van rockmuziek zelf. De muziek staat bol van Klassieke rock, sludge, grunge en metal, afgerond met een progressieve inslag. De donkere, melodische samenzang neemt je terug naar het moment dat de grote alternatieve rockbands de maat sloegen aan het einde van het vorige millennium. Het zware werk dat is verweven met deze invloeden verraadt de diepe liefde voor metal die onder de leden gedeeld wordt.\n\nLaten we de bandleden eens voorstellen. \nAchter één van de microfoons staat zanger/gitarist Tim van Bokhoven. Zijn rauwe, emotionele stemgeluid vormt voor een groot deel van het hart en de ziel van The King’s Head. Er komen momenten voorbij waarop het kan zijn dat u denkt dat een volbloed orkaan zich door de speakers naar buiten vecht. Dat klopt. Zijn naam is Pim van Zuilen. Naast zijn bulderende bijdrage in het vocale departement, is hij verantwoordelijk voor een derde van de gitaaraanval en de dromerige toetsenpartijen die nummers de diepte geven die ze verdienen.\nGitarist Koen Koniuszek is de derde gitarist van het stel. Een stille kracht, een muzikale schilder die met subtiele accenten, bezwerende gitaarlijnen en solo’s zorgt voor een diep en rijk muzikaal palet. \n\nAchter die eerste vuurlinie staat de motor die het allemaal aanjaagt.\nJasper van der Hoeven op bas en zang en Chris Stadhouders op drums. Samen leggen zij de zware maar solide fundatie waarop alles kan worden gebouwd.\n\nInmiddels is het 2020. Na twee jaar is de band er klaar voor om naar buiten te treden.\nDe debuutplaat is eind 2019 opgenomen en staat klaar voor release. \n"
+        },
+        "bioMediumNl": {
+          "nl-NL": "Coming soon"
+        },
+        "bioShortNl": {
+          "nl-NL": "Coming soon"
+        },
+        "bioLongEn": {
+          "nl-NL": "The year is 2018 when The King’s Head is formed in Breda, a city in the deep south of The Netherlands.\n\nFive guys, who have all been playing the local scene since the late nineties, join forces. Their mission is clear from the first time they musically lock in during rehearsal. A dark, melodic, progressive and fresh hybrid of everything they loved to listen to in their formative years.\n\nThe music is as diverse as rock history itself. They take the listener on a journey that goes from classic hardrock to grunge and from sludge to the melodic side of metal, topped off with a progressive edge. Dark vocal harmonies that take the listener back to days when the great alternative rock movement ruled the world at the end of the last millennium. Combined with a heavy edge, that makes no mistake that some of the members had a good and healthy metal collection under their fingertips.\n\nMost notably in that department is the deep and haunting growl that Pim van Zuilen unleashes in the music. Not only is he the bringer of the storm, but while doing that he pulls a double musical duty as a guitar and keyboard player. \nSinger/ guitar player Tim van Bokhoven is confidently in charge of the mic and strings, delivering his raw and emotional vocals with sheer ferocity. Lead guitar player Koen Koniuszek brings thunder and flavour with his dark and haunting leadwork and his heavy, punishing riff work. \n\nBehind the first line of fire resides the engine that drives it all forward. Jasper van der Hoeven on bass and vocals and Chris Stadhouders on drums provide the deep and driving foundation on which the wall of sound is built. \n\nAfter two years of working on their craft, the band is ready to start their first campaign.\n\nTheir self-titled debut album is ready to be released. The band is on full strength, ready and willing to take the battle to the front lines.\n"
+        },
+        "bioMediumEn": {
+          "nl-NL": "Coming soon"
+        },
+        "bioShortEn": {
+          "nl-NL": "Five guys joined forces. Their mission is clear from the first time they musically lock in during rehearsal. A dark, melodic, progressive and fresh hybrid of everything they loved to listen to in their formative years.\n\nThe music is as diverse as rock history itself. From classic hardrock to grunge and sludge to the melodic side of metal, topped off with a progressive edge.  "
+        },
+        "contactInfo": {
+          "nl-NL": "E-mail: info@thekingshead.nl  \nBookings: bookings@thekingshead.nl  \nPress: press@thekingshead.nl  \nPhone: +31 (0)6 4831 3293"
+        },
+        "bandPhotos": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6vVMZXH79bvSVZUvLqAuYg"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "5rRDqib0HUKQEAOMBb9K89"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "ccF8HzYIJyzYoJzPGNeIE"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "68HBJq6dRWALWugOeLJflK"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1NgKeZ5QSvUn7bvsEVSVPE"
+              }
+            }
+          ]
+        },
+        "logos": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "6YiRAseftL0pAsnQWyaYHu"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1DsWXCFh0WDNsOwAugrZ4R"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "37jUeG6mq8L0o2TgsU8Owk",
+        "type": "Entry",
+        "createdAt": "2020-06-05T14:59:10.914Z",
+        "updatedAt": "2020-06-05T14:59:59.568Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-06-05T14:59:59.568Z",
+        "firstPublishedAt": "2020-06-05T14:59:59.568Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pressQuotes"
+          }
+        }
+      },
+      "fields": {
+        "quote": {
+          "nl-NL": "\"Like Alice in Chains on acid\""
+        },
+        "quoteBy": {
+          "nl-NL": "Uber Rock"
+        },
+        "quoteUrl": {
+          "nl-NL": "https://www.facebook.com/uberrockcouk/"
+        },
+        "quoteLinkTitle": {
+          "nl-NL": "Facebook"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1ope3GDBufDwatACY0uDJR",
+        "type": "Entry",
+        "createdAt": "2020-06-05T15:00:39.063Z",
+        "updatedAt": "2020-06-05T15:01:15.350Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-06-05T15:01:15.350Z",
+        "firstPublishedAt": "2020-06-05T15:01:15.350Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pressQuotes"
+          }
+        }
+      },
+      "fields": {
+        "quote": {
+          "nl-NL": "\"The Far Beyond shows a nice piece of prog, stoner, grunge and groove metal, packed in a three-minute beuker.\""
+        },
+        "quoteBy": {
+          "nl-NL": "Never Mind The Hype"
+        },
+        "quoteUrl": {
+          "nl-NL": "https://www.facebook.com/NMTHype"
+        },
+        "quoteLinkTitle": {
+          "nl-NL": "Facebook"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "60AXQen7YzKNt3mWJzST8k",
+        "type": "Entry",
+        "createdAt": "2020-06-05T15:01:32.352Z",
+        "updatedAt": "2020-06-05T15:02:18.419Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-06-05T15:02:18.419Z",
+        "firstPublishedAt": "2020-06-05T15:02:18.419Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "pressQuotes"
+          }
+        }
+      },
+      "fields": {
+        "quote": {
+          "nl-NL": "\"A nice mix of classic rock, sludge, grunge and metal.\""
+        },
+        "quoteBy": {
+          "nl-NL": "3voor12/Breda"
+        },
+        "quoteUrl": {
+          "nl-NL": "https://www.facebook.com/3voor12breda/"
+        },
+        "quoteLinkTitle": {
+          "nl-NL": "Facebook"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "7aMN7ZtDlmxxnPnV5v9yEF",
+        "type": "Entry",
+        "createdAt": "2020-07-24T07:59:24.658Z",
+        "updatedAt": "2020-07-24T08:11:39.551Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2020-07-24T08:11:39.551Z",
+        "firstPublishedAt": "2020-07-24T08:04:25.751Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "releases"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The White Horse"
+        },
+        "showTitleOnHomepage": {
+          "nl-NL": true
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1W0WqXmwmFpg7TYykc8ERp"
+              }
+            }
+          ]
+        },
+        "description": {
+          "nl-NL": "Vol trots presenteren we onze tweede single en video.\nThe White Horse.\n\nWij zijn kinderen van de jaren ‘90. Een tijdperk waarin het de normaalste zaak van de wereld was dat er rockmuziek door de ether zweefde. Op onze debuutplaat legt geen enkel nummer deze invloed zo bloot als dit nummer. Een debuutplaat waar we zeer snel iets heel, heel fijns over te melden hebben. Maar nu eerst onze tweede single.\n\nDe video is opgenomen in een fraai, afgeragd, karakteristiek fabriekspand. Dat paste gevoelsmatig goed bij de muziek en de tekst, met als centraal thema het verval dat altijd het resultaat is van de verraderlijke, warme en desastreuze relatie die mensen onderhouden met zware verdovende middelen.\nZware kost, maar het is een lekker filmpje geworden. En zo'n vervallen loods heeft één voordeel. Je steekt er als een groep pokdalige mannen al snel een beetje voordelig bij af"
+        },
+        "releaseDate": {
+          "nl-NL": "2020-07-24"
+        },
+        "tracks": {
+          "nl-NL": "The White Horse"
+        },
+        "streamingURLs": {
+          "nl-NL": [
+            "https://open.spotify.com/album/1aQ4irMQ4r8w0WzuFoe3di",
+            "https://tidal.com/browse/track/142715274",
+            "https://www.deezer.com/track/970660322",
+            "https://music.apple.com/us/album/the-white-horse-single/1515143526?uo=4"
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "k3auaEto6VjClruQLt2V3",
+        "type": "Entry",
+        "createdAt": "2020-07-24T08:14:26.519Z",
+        "updatedAt": "2020-07-24T08:14:57.531Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-07-24T08:14:57.531Z",
+        "firstPublishedAt": "2020-07-24T08:14:57.531Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "videos"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The White Horse"
+        },
+        "youtubeId": {
+          "nl-NL": "1NphEV2jKVE"
+        },
+        "sortingWeight": {
+          "nl-NL": 998
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "32FSSTgBwyoqEq4PN37PZQ",
+        "type": "Entry",
+        "createdAt": "2020-07-24T08:25:39.070Z",
+        "updatedAt": "2020-10-03T11:18:27.575Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2020-10-03T11:18:27.575Z",
+        "firstPublishedAt": "2020-07-24T08:29:03.936Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "merch"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "nl-NL": "The White Horse"
+        },
+        "description": {
+          "nl-NL": "We proudly present our second single and video. The White Horse."
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1W0WqXmwmFpg7TYykc8ERp"
+              }
+            }
+          ]
+        },
+        "price": {
+          "nl-NL": 0
+        },
+        "url": {
+          "nl-NL": "https://thekingshead.bandcamp.com/track/the-white-horse"
+        },
+        "sortingWeight": {
+          "nl-NL": 0
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "5ey9MJZix6Fth1bEBZ8BKe",
+        "type": "Entry",
+        "createdAt": "2020-10-03T09:58:41.754Z",
+        "updatedAt": "2020-10-03T10:57:27.238Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2020-10-03T10:57:27.238Z",
+        "firstPublishedAt": "2020-10-03T10:05:09.477Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The Far Beyond aired on KINK radio"
+        },
+        "shortDescription": {
+          "nl-NL": "On September 16th our single 'The Far Beyond' was broadcasted on KINK radio! Listen to the (Dutch) interview with our friend Jetty van Kooij followed by 'The Far Beyond'. "
+        },
+        "showOnHomePage": {
+          "nl-NL": true
+        },
+        "displayDate": {
+          "nl-NL": "2020-09-16T00:00+02:00"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "gLWa1qX4K1L3CMEyOI5pt"
+              }
+            }
+          ]
+        },
+        "readMoreUrl": {
+          "nl-NL": "https://www.facebook.com/watch/?v=312901610009133"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1RijmFjtViZgb2F00Mo5lP",
+        "type": "Entry",
+        "createdAt": "2020-10-03T11:32:45.231Z",
+        "updatedAt": "2020-10-03T11:43:39.970Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2020-10-03T11:43:39.970Z",
+        "firstPublishedAt": "2020-10-03T11:36:25.499Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "news"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The King's Head signs with WormHoleDeath"
+        },
+        "shortDescription": {
+          "nl-NL": "!News flash! >> Finally we can tell the world that we have signed a record deal with WormHoleDeath records (from Italy)! Hell yeah!!! 🤘 WHD takes our upcoming album to the next level with worldwide physical and digital distribution including promotion."
+        },
+        "showOnHomePage": {
+          "nl-NL": true
+        },
+        "displayDate": {
+          "nl-NL": "2020-08-28T00:00+02:00"
+        },
+        "images": {
+          "nl-NL": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "1QGfwLQonYgLZaZDWgMvwT"
+              }
+            }
+          ]
+        },
+        "readMoreUrl": {
+          "nl-NL": "https://www.facebook.com/watch/?v=2398789640245822"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "erCYpNrYg4WD07Fwhoxdz",
+        "type": "Asset",
+        "createdAt": "2020-03-07T20:06:55.229Z",
+        "updatedAt": "2020-03-07T20:07:53.580Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-07T20:07:53.580Z",
+        "firstPublishedAt": "2020-03-07T20:07:53.580Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "tkh-shirt-unisex"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/erCYpNrYg4WD07Fwhoxdz/cbced883cdbfeeb8eb1c8528ec036561/tkh-shirt.jpg",
+            "details": {
+              "size": 47839,
+              "image": {
+                "width": 640,
+                "height": 772
+              }
+            },
+            "fileName": "tkh-shirt.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "7mpRNgchggfL8yhEyZ4Unj",
+        "type": "Asset",
+        "createdAt": "2020-03-11T22:11:02.250Z",
+        "updatedAt": "2020-04-09T11:17:34.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2020-04-09T11:17:34.594Z",
+        "firstPublishedAt": "2020-03-11T22:11:20.997Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "bg"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/7mpRNgchggfL8yhEyZ4Unj/6a986d6e474019e9837cb1d39ff5be26/bg-no-man.jpg",
+            "details": {
+              "size": 1347200,
+              "image": {
+                "width": 3840,
+                "height": 2560
+              }
+            },
+            "fileName": "bg-no-man.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "63UH48BWFnWtScPWoKx3dG",
+        "type": "Asset",
+        "createdAt": "2020-04-17T13:59:11.445Z",
+        "updatedAt": "2020-04-17T14:01:35.381Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2020-04-17T14:01:35.381Z",
+        "firstPublishedAt": "2020-04-17T14:01:35.381Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Ambigram Shirt Unisex"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/63UH48BWFnWtScPWoKx3dG/265303f9add5fe992a0ee63022253ab7/unisex.jpg",
+            "details": {
+              "size": 118611,
+              "image": {
+                "width": 1300,
+                "height": 1300
+              }
+            },
+            "fileName": "unisex.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "13GknM913SV2WXiCt7URrA",
+        "type": "Asset",
+        "createdAt": "2020-04-17T14:05:07.121Z",
+        "updatedAt": "2020-04-17T14:05:30.206Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-04-17T14:05:30.206Z",
+        "firstPublishedAt": "2020-04-17T14:05:30.206Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Ambigram Girlie"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/13GknM913SV2WXiCt7URrA/1bcc8e4667bd6c0575618c085cb44377/girlie-round.jpg",
+            "details": {
+              "size": 115735,
+              "image": {
+                "width": 1300,
+                "height": 1300
+              }
+            },
+            "fileName": "girlie-round.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "6HgXAE1F5HCcjz3v9WQ1yL",
+        "type": "Asset",
+        "createdAt": "2020-04-17T14:06:33.981Z",
+        "updatedAt": "2020-04-17T14:06:54.623Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2020-04-17T14:06:54.623Z",
+        "firstPublishedAt": "2020-04-17T14:06:54.623Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Ambigram Girlie V-hals"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/6HgXAE1F5HCcjz3v9WQ1yL/2cb1da8a609dd63a3dbb7e815d38ab1c/girlie-v.jpg",
+            "details": {
+              "size": 119847,
+              "image": {
+                "width": 1300,
+                "height": 1300
+              }
+            },
+            "fileName": "girlie-v.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "5o2QzmMG3FkoMFGYeHr6Y4",
+        "type": "Asset",
+        "createdAt": "2020-04-17T14:09:10.670Z",
+        "updatedAt": "2020-05-21T18:18:32.556Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 22,
+        "publishedAt": "2020-05-21T18:18:32.556Z",
+        "firstPublishedAt": "2020-04-17T14:11:32.778Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 23,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Cover The Far Beyond"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/5o2QzmMG3FkoMFGYeHr6Y4/2342077911eaf2d1dec224f86470e765/The_Far_Beyond.jpg",
+            "details": {
+              "size": 5433648,
+              "image": {
+                "width": 3817,
+                "height": 3817
+              }
+            },
+            "fileName": "The Far Beyond.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "6vVMZXH79bvSVZUvLqAuYg",
+        "type": "Asset",
+        "createdAt": "2020-06-05T07:13:49.674Z",
+        "updatedAt": "2020-06-05T07:15:21.233Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-06-05T07:15:21.233Z",
+        "firstPublishedAt": "2020-06-05T07:15:21.233Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Band photo landscape"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/6vVMZXH79bvSVZUvLqAuYg/6c7c54825e512427c391f29e5a302504/bandfoto_liggend.jpg",
+            "details": {
+              "size": 10676307,
+              "image": {
+                "width": 4912,
+                "height": 3275
+              }
+            },
+            "fileName": "bandfoto liggend.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "5rRDqib0HUKQEAOMBb9K89",
+        "type": "Asset",
+        "createdAt": "2020-06-05T07:15:29.234Z",
+        "updatedAt": "2020-06-05T07:16:10.137Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-06-05T07:16:10.137Z",
+        "firstPublishedAt": "2020-06-05T07:16:10.137Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Band photo portrait"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/5rRDqib0HUKQEAOMBb9K89/4478f467a7d0bd2b4e85c6f0e14e2ad3/Band_Photo_Portrait.jpg",
+            "details": {
+              "size": 10529815,
+              "image": {
+                "width": 3177,
+                "height": 4766
+              }
+            },
+            "fileName": "Band Photo Portrait.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "ccF8HzYIJyzYoJzPGNeIE",
+        "type": "Asset",
+        "createdAt": "2020-06-05T07:16:19.830Z",
+        "updatedAt": "2020-06-05T07:18:33.685Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-06-05T07:18:33.685Z",
+        "firstPublishedAt": "2020-06-05T07:18:33.685Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Band photo live"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/ccF8HzYIJyzYoJzPGNeIE/ae2c759de61120832633ceb90d921de0/042219_DSC4869ZW.jpg",
+            "details": {
+              "size": 17837116,
+              "image": {
+                "width": 6891,
+                "height": 4594
+              }
+            },
+            "fileName": "042219_DSC4869ZW.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "6YiRAseftL0pAsnQWyaYHu",
+        "type": "Asset",
+        "createdAt": "2020-06-05T11:21:11.487Z",
+        "updatedAt": "2020-06-05T11:22:24.683Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-06-05T11:22:24.683Z",
+        "firstPublishedAt": "2020-06-05T11:22:24.683Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Ambigram Logo Transparent"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/6YiRAseftL0pAsnQWyaYHu/2294f586f9148b7f785212224ea1250f/TKH_logo_los.png",
+            "details": {
+              "size": 5728630,
+              "image": {
+                "width": 3937,
+                "height": 3937
+              }
+            },
+            "fileName": "TKH_logo_los.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1DsWXCFh0WDNsOwAugrZ4R",
+        "type": "Asset",
+        "createdAt": "2020-06-05T11:22:28.874Z",
+        "updatedAt": "2020-06-05T11:23:00.465Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-06-05T11:23:00.465Z",
+        "firstPublishedAt": "2020-06-05T11:23:00.465Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Ambigram Logo Transparent (No Shadow)"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/1DsWXCFh0WDNsOwAugrZ4R/139a3b57d82e49fc95500feb574e6378/TKH_logo_los_wit.png",
+            "details": {
+              "size": 784189,
+              "image": {
+                "width": 3932,
+                "height": 3056
+              }
+            },
+            "fileName": "TKH_logo_los_wit.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "68HBJq6dRWALWugOeLJflK",
+        "type": "Asset",
+        "createdAt": "2020-06-05T13:56:40.112Z",
+        "updatedAt": "2020-06-05T13:57:37.864Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-06-05T13:57:37.864Z",
+        "firstPublishedAt": "2020-06-05T13:57:37.864Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Band photo group"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/68HBJq6dRWALWugOeLJflK/42f8865f1a21d8ec4f2cb27be2845984/20190704_TKH_ZW20190704_tkh_zw_dsc5422.jpg",
+            "details": {
+              "size": 7225692,
+              "image": {
+                "width": 6354,
+                "height": 4236
+              }
+            },
+            "fileName": "20190704_TKH_ZW20190704_tkh_zw_dsc5422.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1W0WqXmwmFpg7TYykc8ERp",
+        "type": "Asset",
+        "createdAt": "2020-07-24T08:00:17.454Z",
+        "updatedAt": "2020-07-24T08:01:02.918Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2020-07-24T08:01:02.918Z",
+        "firstPublishedAt": "2020-07-24T08:01:02.918Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1mWZAAD6d6I2p0HQmjx5V2"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "The White Horse"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/1W0WqXmwmFpg7TYykc8ERp/02ecba9e9a8bfbd50195bdb327557334/The_White_Horse.jpg",
+            "details": {
+              "size": 375007,
+              "image": {
+                "width": 1024,
+                "height": 1024
+              }
+            },
+            "fileName": "The White Horse.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "gLWa1qX4K1L3CMEyOI5pt",
+        "type": "Asset",
+        "createdAt": "2020-10-03T10:01:37.200Z",
+        "updatedAt": "2020-10-03T10:02:06.122Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-10-03T10:02:06.122Z",
+        "firstPublishedAt": "2020-10-03T10:02:06.122Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "KINK"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/gLWa1qX4K1L3CMEyOI5pt/e8aab21e391ddf252562817bc0920e45/kink.png",
+            "details": {
+              "size": 8141,
+              "image": {
+                "width": 480,
+                "height": 480
+              }
+            },
+            "fileName": "kink.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1QGfwLQonYgLZaZDWgMvwT",
+        "type": "Asset",
+        "createdAt": "2020-10-03T11:36:03.632Z",
+        "updatedAt": "2020-10-03T11:49:06.212Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2020-10-03T11:49:06.212Z",
+        "firstPublishedAt": "2020-10-03T11:36:19.580Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "WHD logo"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/1QGfwLQonYgLZaZDWgMvwT/b3a47714a42eb1d20401eaac7939e11a/whd.png",
+            "details": {
+              "size": 140114,
+              "image": {
+                "width": 400,
+                "height": 400
+              }
+            },
+            "fileName": "whd.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "id": "1NgKeZ5QSvUn7bvsEVSVPE",
+        "type": "Asset",
+        "createdAt": "2020-11-23T23:28:03.902Z",
+        "updatedAt": "2020-11-23T23:29:17.891Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-11-23T23:29:17.891Z",
+        "firstPublishedAt": "2020-11-23T23:29:17.891Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "20Gi3lqM2VXbQqMKfMsDTw"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "nl-NL": "Band photo color"
+        },
+        "file": {
+          "nl-NL": {
+            "url": "//images.ctfassets.net/lzi4cpw5ff3r/1NgKeZ5QSvUn7bvsEVSVPE/8afead27e6b1e2a85a89dce554d138e7/Band_Photo.jpg",
+            "details": {
+              "size": 9912843,
+              "image": {
+                "width": 4760,
+                "height": 3167
+              }
+            },
+            "fileName": "Band Photo.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "Dutch (Netherlands)",
+      "code": "nl-NL",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "37zLuS1cMGzrnaSvm3EnQ1",
+        "version": 2,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "lzi4cpw5ff3r"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "createdAt": "2020-03-04T19:00:55Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "139lIsXjeQiZIYtoR8GS4m"
+          }
+        },
+        "updatedAt": "2020-03-04T19:49:42Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+  ]
+}
