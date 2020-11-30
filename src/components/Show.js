@@ -88,7 +88,7 @@ const Show = ({
         { ticketUrl && <a href={ticketUrl} className="c-show__link u-umbrella" target="_blank" rel="noopener noreferrer">{ name }</a> }
         { !ticketUrl && name }
       </h3>
-      { locationName && <div className="c-show__location">
+      { locationName && locationName !== name && <div className="c-show__location">
         { locationUrl && <a href={locationUrl} target="_blank" rel="noopener noreferrer">{ [locationName, locationCity].filter(s => !!s).join(', ') }</a> }
         { !locationUrl && [locationName, locationCity].filter(s => !!s).join(', ') }
       </div> }

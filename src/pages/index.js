@@ -7,7 +7,7 @@ import Wrapper from '../components/Wrapper'
 // import PRESS_QUOTES from "../components/PressQuotes";
 
 export const HOMEPAGE_QUERY = graphql`
-query HOMEPAGE_QUERY ($yesterday: Date) {
+query HOMEPAGE_QUERY {
   meta: allContentfulMeta(limit:1) {
     edges {
       node {
@@ -58,7 +58,7 @@ query HOMEPAGE_QUERY ($yesterday: Date) {
   #     }
   #   }
   # }  
-  showList: allContentfulShows(filter: {start: {lte: $yesterday}}, sort: {fields: start, order: ASC}) {
+  showList: allContentfulShows(limit: 10, sort: {fields: start, order: DESC}) {
     edges {
       node {
         ticketPrice
@@ -126,7 +126,7 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
 
     {/* Shows */}
     { shows && <section className="c-shows">
-      <h2>Shows</h2>
+      <h2><a href={`/shows`}>Shows</a></h2>
       <ol className="c-shows__list">{
         shows.map(({ node }) => {
           return(<li className="c-shows__item" key={node.name}>
