@@ -110,6 +110,18 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
       }</ul>
     </section> }
 
+    {/* Videos */}
+    { videos && <section className="c-videos">
+      <h2>Videos</h2>
+      <ol className="c-videos__list">{
+        videos.map(({ node }) => {
+          return(<li className="c-videos__item" key={node.title}>
+              <Video {... node} />
+          </li>)
+        })
+      }</ol>
+    </section> }
+
     {/*/!* Press quotes *!/*/}
     {/*{ pressQuotes && <PRESS_QUOTES pressQuotes={pressQuotes} /> }*/}
 
@@ -136,17 +148,6 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
       }</ol>
     </section> }
 
-    {/* Videos */}
-    { videos && <section className="c-videos">
-      <h2>Videos</h2>
-      <ol className="c-videos__list">{
-        videos.map(({ node }) => {
-          return(<li className="c-videos__item" key={node.title}>
-              <Video {... node} />
-          </li>)
-        })
-      }</ol>
-    </section> }
   </Wrapper>)
 };
 
