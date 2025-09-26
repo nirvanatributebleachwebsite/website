@@ -149,6 +149,9 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
       <p><strong>Ferdi Wels</strong><br />
       Tel: +31 (0)6 1920 0975<br />
       E-mail: <a href="mailto:info@nirvanatribute.nl">info@nirvanatribute.nl</a></p>
+      <p><strong>Tim van Bokhoven</strong><br />
+      Tel: +31 (0)6 4831 3293<br />
+      E-mail: <a href="mailto:info@nirvanatribute.nl">info@nirvanatribute.nl</a></p>
     </section>
 
     {/* Shows */}
