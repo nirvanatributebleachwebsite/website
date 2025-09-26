@@ -58,7 +58,10 @@ query HOMEPAGE_QUERY {
   #     }
   #   }
   # }  
-  showList: allContentfulShows(limit: 10, sort: {fields: start, order: DESC}) {
+  showList: allContentfulShows(
+    limit: 30,
+    sort: {fields: start, order: DESC} # FUTURE-FIRST window for perf; we’ll re-sort ASC for display
+  ) {
     edges {
       node {
         ticketPrice
@@ -91,10 +94,22 @@ query HOMEPAGE_QUERY {
 `;
 
 const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }}) => {
-  const shows = showList.edges.length && showList.edges || false
-  const news = newsList.edges.length && newsList.edges || false
   // const pressQuotes = pressQuoteItems && pressQuoteItems.edges || false
+  const news = newsList.edges.length && newsList.edges || false
   const videos = videoItems.edges || false
+
+  // Pull a small DESC window (future-first), keep only future/ongoing, re-sort ASC, cap to 10.
+  const now = Date.now();
+  const shows = (showList?.edges || [])
+    .filter(({ node }) => {
+      const endTs = node.end ? Date.parse(node.end) : NaN;
+      const startTs = node.start ? Date.parse(node.start) : NaN;
+      // Keep multi-day shows until they end; otherwise keep shows that haven't started yet
+      return (Number.isFinite(endTs) && endTs >= now) ||
+        (Number.isFinite(startTs) && startTs >= now);
+    })
+    .sort((a, b) => Date.parse(a.node.start) - Date.parse(b.node.start)) // soonest → latest
+    .slice(0, 10);
 
   return (<Wrapper>
 
@@ -137,11 +152,11 @@ const Home = ({data:{showList, videoItems, newsList/*, pressQuoteItems*/, meta }
     </section>
 
     {/* Shows */}
-    { shows && <section className="c-shows">
+    { shows && shows.length > 0 && <section className="c-shows">
       <h2><a href={`/shows`}>Shows</a></h2>
       <ol className="c-shows__list">{
         shows.map(({ node }) => {
-          return(<li className="c-shows__item" key={node.name}>
+          return(<li className="c-shows__item" key={`${node.name}-${node.start}`}>
             <Show {... node} />
           </li>)
         })
