@@ -2,6 +2,7 @@ import React from 'react'
 import Facebook from '../../assets/svg/facebook.svg';
 import Instagram from '../../assets/svg/instagram.svg';
 import YouTube from '../../assets/svg/youtube.svg';
+import TikTok from '../../assets/svg/tiktok.svg';
 
 const linkAttrs = {
   facebook: {
@@ -18,6 +19,11 @@ const linkAttrs = {
     className: 'youtube',
     logo: YouTube,
     text: 'BLEACH on YouTube',
+  },
+  tiktok: {
+    className: 'tiktok',
+    logo: TikTok,
+    text: 'BLEACH on TikTok',
   },
 }
 
