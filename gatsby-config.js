@@ -32,7 +32,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-offline',
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-plugin-netlify',
